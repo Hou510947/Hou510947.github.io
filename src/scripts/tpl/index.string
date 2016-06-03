@@ -1,0 +1,103 @@
+<div class="m-index">
+	
+	<div class="m-index-container"></div>
+	<!--<header>
+		亲子装
+	</header>
+	
+	<section spa-widget='scroll'>
+		<div>
+			<nav>
+				<div class="swiper-container">
+				    <div class="swiper-wrapper">
+				        <div class="swiper-slide slide1">
+				        	<img src="/qinzi-net/images/pic3.jpg"/>
+				        </div>
+				        <div class="swiper-slide">
+				        	<img src="/qinzi-net/images/pic1.jpg"/>
+				        </div>
+				        <div class="swiper-slide">
+				        	<img src="/qinzi-net/images/pic2.jpg"/>
+				        </div>
+				    </div>
+				</div>
+			</nav>
+			<div class="one">
+				<span>
+					<i class="yo-ico">&#xe612;</i>
+					<p>搜索</p>
+					<b class="yo-ico">&#xe65a;</b>
+				</span>
+			</div>
+			<div class="two">
+				<ul>
+					<li>
+						<i class="yo-ico">&#xe60e;</i>
+						<b>我要进驻</b>
+					</li>
+					<li></li>
+					<li>
+						<i class="yo-ico">&#xe65b;</i>
+						<b>新品发布</b>
+					</li>
+					<li></li>
+					<li>
+						<i class="yo-ico">&#xe617;</i>
+						<b>亲自教育</b>
+					</li>
+					<li></li>
+					<li>
+						<i class="yo-ico">&#xe7a7;</i>
+						<b>更多</b>
+					</li>
+				</ul>
+			</div>
+			<div class="pic">
+				<ul>
+					<li><img src="/qinzi-net/images/pic1.jpg"></li>
+					<li></li>
+					<li><img src="/qinzi-net/images/pic2.jpg"></li>
+				</ul>
+				<ul>
+					<li><img src="/qinzi-net/images/pic1.jpg"></li>
+					<li></li>
+					<li><img src="/qinzi-net/images/pic2.jpg"></li>
+				</ul>
+				<ul>
+					<li><img src="/qinzi-net/images/pic1.jpg"></li>
+					<li></li>
+					<li><img src="/qinzi-net/images/pic2.jpg"></li>
+				</ul>
+				<ul>
+					<li><img src="/qinzi-net/images/pic1.jpg"></li>
+					<li></li>
+					<li><img src="/qinzi-net/images/pic2.jpg"></li>
+				</ul>
+			</div>
+		</div>
+	</section>-->
+	<footer>
+		<ul>
+			<li class="active"  action-type="switch.view" data-tag='home'>
+				<i class="yo-ico">&#xe619;</i>
+				<b>首页</b>
+			</li>
+			<li action-type="switch.view" data-tag='classification'>
+				<i class="yo-ico">&#xe657;</i>
+				<b>分类</b>
+			</li>
+			<li action-type="switch.view" data-tag='search'>
+				<i class="yo-ico">&#xe64b;</i>
+				<b>发现</b>
+			</li>
+			<li action-type="switch.view" data-tag='shop'>
+				<i class="yo-ico">&#xe62f;</i>
+				<b>商铺</b>
+			</li>
+			<li action-type="switch.view" data-tag='member'>
+				<i class="yo-ico">&#xe664;</i>
+				<b>会员</b>
+			</li>
+		</ul>
+	</footer>
+</div>

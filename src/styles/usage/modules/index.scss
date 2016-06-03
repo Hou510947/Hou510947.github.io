@@ -1,0 +1,200 @@
+@import "../core/swiper-3.3.1.min.css";
+
+.m-index{
+    @include flexbox();
+    @include flex-direction(column);
+    width: 100%;
+    height: 100%;
+    & >*{
+      width: 100%;  
+    }
+    >div{
+        @include flex();
+        width: 100%;
+        position: relative;
+        header{
+            height: .44rem;
+            background: #f796bf;
+            text-align: center;
+            line-height: .44rem;
+            font-size: .24rem;
+            font-weight: 900;
+            color: white;
+        }
+        section{
+            @include flex();
+            width: 100%;
+            >div{
+                width: 100%;
+                height: 100%;
+                overflow: hidden;            
+            nav{
+                height: 1.36rem;
+                width: 100%;
+                div{
+                    width: 100%;
+                    height: 1.36rem;
+                    div:nth-child(1){
+                        div{
+                            img{
+                                width: 100%;
+                                height: 100%;
+                            }
+                        }
+                    }
+                }
+            }
+            .one{
+               width: 100%;
+               height: .46rem;
+               padding-top: .12rem;
+               span{
+                   width: 90%;
+                   margin-left: 5%;
+                   
+                   height: .34rem;
+                   display: inline-block;
+                   @include flexbox();
+                   @include justify-content(center);
+                   @include align-items(center);
+                   @include box-sizing(border-box);
+                   @include border(1px,#ddd,solid,6px);
+                   i{
+                       @include flex(2);
+                       text-align: center;
+                       font-weight: normal;
+                       font-size: .16rem;
+                   }
+                   b{
+                       font-size: .20rem;
+                       @include flex(3);
+                       text-align: center;
+                       font-weight: normal;
+                   }
+                   p{
+                       @include flex(16);
+                       font-size: .16rem;
+                       color: #e1e1e1;
+                   }
+               }
+            }
+            .two{
+                width: 100%;
+                height: .83rem;
+                ul{
+                    width: 94%;
+                    margin-left: 3%;
+                    background: cyan;
+                    height: .72rem;
+                    @include flexbox();
+                    li:not(:nth-child(2n)){
+                        @include flex();
+                        @include flexbox();
+                        @include flex-direction(column);
+                        @include justify-content(center);
+                        @include align-items(center);
+                        background: #f796bf;
+                        i,b{
+                            font-weight: normal;
+                            color: white;
+                        }
+                        i{
+                            font-size: .36rem;
+                            line-height: .44rem;
+                        }
+                        b{
+                            font-size: .12rem;
+                        }
+                    }
+                    li:nth-child(2n){
+                        width: 0.02rem;
+                        background: white;
+                    }
+                }
+            }
+            .pic{
+                width: 100%;
+                
+                ul{
+                    width: 94%;
+                    margin-left: 3%;
+                    height: 1.05rem;
+                    background: white;
+                    @include flexbox();
+                    margin-bottom: .02rem;
+                    li:not(:nth-child(2)){
+                        width: 100%;
+                        height: 100%;
+                        @include flex();
+                        img{
+                            width: 100%;
+                            height: 100%;
+                        }
+                    }
+                    li:nth-child(2){
+                        width: .02rem;
+                    }
+                }
+            }
+         }   
+        }
+    }
+    footer{
+        height: .58rem;
+        background: white;
+        position: relative;
+        z-index: 9999;
+        ul{
+            width: 100%;
+            height: 100%;
+            @include flexbox();
+            @include box-sizing(border-box);
+            @include border(1px 0 0 0,#e8e8e8);
+            li{
+               @include flex();
+               @include flexbox();
+               @include flex-direction(column);
+               @include justify-content(center);
+               @include align-items(center);
+               position: relative;
+               &.active b,
+               &.active i{
+                   color: #f796bf;
+               }
+               &:nth-child(3) i{
+                   width: .78rem;
+                   height: .78rem;
+                   background: white;
+                   @include box-sizing(border-box);
+                   @include border(1px,#e8e8e8,solid,50%);
+                   position: absolute !important;
+                   bottom: 0;
+                   left: 50%;
+                   @include transform(translate(-50%,0));
+                   z-index: 1999;
+                   text-align: center;
+                   padding-top: .1rem;
+               }
+               &:nth-child(3) b{
+                   position: absolute;
+                   z-index: 2000;
+                   bottom: .01rem;
+                   left: 50%;
+                   @include transform(translate(-50%,0));
+               }
+               i,b{
+                   font-weight: normal;
+                   display: block;
+               }
+               i{
+                   font-size: .26rem;
+                   line-height: .38rem;
+                   color: #939191;
+               }
+               b{
+                   font-size: .12rem;
+               }
+            }
+        }
+    }
+}
